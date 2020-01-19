@@ -3,7 +3,7 @@ Models of Movie Recommendation Systems made in Python using Collaborative Filter
 
 Using the [Data Set of the MovieLens 20M Dataset Kaggle Competition](https://www.kaggle.com/grouplens/movielens-20m-dataset), two different kinds of Movie Recommendation Systems were created)
 
-### Collaborative Filtering: 
+### Collaborative Filtering 
 
 Intuitive approach that actually does not require Machine Learning to be implemented, but still produces competitive results. The idea of this type of model is to mimic the creation of a sparse matrix Users x Movies, with all the ratings in it, but in a much more efficient way, in the form of dictionaries. From there, through cosine distances, weights can be used to calculate the influence of the opinions of other users to predict the expected rating of a movie from a certain user. Two approaches are taken in this code: 
 * The first is a *User-User* collaborative filtering, where there's a loop for each user with all other users to find the ones with similar taste and finally recommend movies that they seemed to like. 
